@@ -1,6 +1,8 @@
 from Coach import Coach
-from othello.OthelloGame import OthelloGame as Game
-from othello.pytorch.NNet import NNetWrapper as nn
+#from othello.OthelloGame import OthelloGame as Game
+# from tictactoe.TicTacToeGame import TicTacToeGame as Game
+from pente.PenteGame import PenteGame as Game
+from pente.keras.NNet import NNetWrapper as nn
 from utils import *
 
 args = dotdict({
@@ -12,6 +14,14 @@ args = dotdict({
     'numMCTSSims': 25,
     'arenaCompare': 40,
     'cpuct': 1,
+    # 'numIters': 1,
+    # 'numEps': 1,
+    # 'tempThreshold': 15,
+    # 'updateThreshold': 0.6,
+    # 'maxlenOfQueue': 200000,
+    # 'numMCTSSims': 1,
+    # 'arenaCompare': 1,
+    # 'cpuct': 1,
 
     'checkpoint': './temp/',
     'load_model': False,
